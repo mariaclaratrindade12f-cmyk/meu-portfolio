@@ -1,1 +1,247 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Clara | Desenvolvedora Web</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      border-bottom: 1px solid #263248;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      max-width: 650px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background: #38bdf8;
+      color: #0b1120;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .skill {
+      padding: 10px 20px;
+      background: #1e293b;
+      border-radius: 8px;
+      color: #7dd3fc;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 28px;
+      border: 1px solid #334155;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #7dd3fc;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      border-top: 1px solid #263248;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav a {
+        margin: 0 15px 0 0;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MC.dev</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p>Olá! Seja bem-vindo ao meu portfólio.</p>
+
+      <h1>Eu sou <span>Maria Clara</span></h1>
+
+      <p>
+        Estudante de Informática para Internet no IFRJ,
+        apaixonada por desenvolvimento web, tecnologia
+        e criação de experiências digitais.
+      </p>
+
+      <a href="#projetos" class="btn">Ver meus projetos</a>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>
+        Estou desenvolvendo minhas habilidades em
+        programação e desenvolvimento web, com foco
+        em HTML, CSS e criação de páginas modernas.
+        Gosto de transformar ideias em projetos digitais
+        e aprender novas tecnologias.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Minhas habilidades</h2>
+
+      <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">Web Design</span>
+        <span class="skill">GitHub</span>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <h2>Meus projetos</h2>
+
+      <div class="projects">
+        <article class="card">
+          <h3>Ciência Delas</h3>
+          <p>
+            Site educacional desenvolvido com HTML e CSS,
+            destacando mulheres brasileiras e suas
+            contribuições para a sociedade.
+          </p>
+
+          <a href="https://mariaclaratrindade12f-cmyk.github.io/ci-ncia-delas/"
+             target="_blank" rel="noopener noreferrer">
+            Visualizar projeto
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Novos projetos</h3>
+          <p>
+            Em breve, novos trabalhos de desenvolvimento
+            web e programação serão adicionados aqui.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Portfólio de Maria Clara | 2026</p>
+  </footer>
+
+</body>
+</html>
+
